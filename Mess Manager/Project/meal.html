@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Manager</title>
+    <link rel="stylesheet" href="/CSS/meal.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">Creative Manager</div>
+            <nav class="menu">
+                <a href="/index.html" class="menu-item">Homepage</a>
+                <a href="/Project/meal.html" class="menu-item"style="color: slateblue;">Meal Manage</a>
+                <a href="/Project/shopping.html" class="menu-item">Shopping</a>
+                <a href="/Project/payment.html" class="menu-item">Payment</a>
+            </nav>
+        </aside>
+
+    </div>
+     <!-- Main Content -->
+        <main class="parent">
+            <div class="section-container">
+                <h2 class="section-title">Meal Manage</h2>
+                
+                <!-- Filter Section -->
+                <div class="filter-container">
+                    <label for="month">Select Month:</label>
+                    <select id="month" class="filter-input">
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <!-- Add more months as needed -->
+                    </select>
+
+                    <label for="year">Select Year:</label>
+                    <select id="year" class="filter-input">
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <!-- Add more years as needed -->
+                    </select>
+
+                    <button class="submit-btn" onclick="filterMeals()">Submit</button>
+                </div>
+
+                <!-- Meal Table -->
+                <div class="table-container">
+                    <table class="meal-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Member Name</th>
+                                <th>Breakfast</th>
+                                <th>Lunch</th>
+                                <th>Dinner</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="meal-table-body">
+                            <!-- Rows will be dynamically added here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="section-container">
+                <h2 class="section-title">Meal Today</h2>
+                <div class="table-container">
+                    <table class="shopping-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Member</th>
+                                <th>Breakfast</th>
+                                <th>Lunch</th>
+                                <th>Dinner</th>
+                                <th>Total</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><select class="table-input">
+                                    <option>Gazi</option>
+                                    <option>Nokib</option>
+                                    <option>Rahman</option>
+                                </select></td>
+                                <td><select class="table-input">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select></td>
+                                <td>
+                                    <select class="table-input">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </td>
+                                <td><select class="table-input">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select></td>
+                                <td><input type="number" class="table-input" placeholder="0.00" readonly></td>
+                                <td>
+                                    <button class="delete-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M4 7l16 0" />
+                                            <path d="M10 11l0 6" />
+                                            <path d="M14 11l0 6" />
+                                            <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                            <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                        </svg>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="table-buttons">
+                        <button class="add-row-btn">+ Add Row</button>
+                        <button class="submit-btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/JS/meal.js"></script>
+</body>
+</html>

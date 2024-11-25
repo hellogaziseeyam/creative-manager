@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Manager</title>
+    <link rel="stylesheet" href="/CSS/homepage.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">Creative Manager</div>
+            <nav class="menu">
+                <a href="/index.html" class="menu-item">Homepage</a>
+                <a href="/Project/meal.html" class="menu-item" >Meal Manage</a>
+                <a href="/Project/shopping.html" class="menu-item">Shopping</a>
+                <a href="/Project/payment.html" class="menu-item" style="color: slateblue;">Payment</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="parent">
+            <!-- Overview Section -->
+            <div class="section-container">
+                <h2 class="section-title">Overview</h2>
+                <div class="section">
+                    <div class="card-fill-focus">
+                        <div class="info">
+                            <p class="card-title">160</p>
+                            <p class="card-sub">Total Due</p>
+                        </div>
+                    </div>
+                    <div class="card-outline">
+                        <div class="info">
+                            <p class="card-title">160</p>
+                            <p class="card-sub">Recieved Today</p>
+                        </div>
+                    </div>
+                    </div>
+<!-- Payment Received Section -->
+<div class="section-container">
+    <h2 class="section-title">Payment Received</h2>
+    <div class="table-container">
+        <table class="payment-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Member</th>
+                    <th>Due</th>
+                    <th>Receive</th>
+                    <th>Remain</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <select class="table-input">
+                            <option>Select Member</option>
+                            <option>John Doe</option>
+                            <option>Jane Smith</option>
+                            <option>Mark Lee</option>
+                        </select>
+                    </td>
+                    <td><input type="number" class="table-input" placeholder="0.00" disabled></td>
+                    <td><input type="number" class="table-input" placeholder="0.00"></td>
+                    <td><input type="number" class="table-input" placeholder="0.00" disabled></td>
+                    <td>
+                        <button class="delete-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M4 7l16 0" />
+                                <path d="M10 11l0 6" />
+                                <path d="M14 11l0 6" />
+                                <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                            </svg>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="table-buttons">
+            <button class="add-row-btn">+ Add Row</button>
+            <button class="submit-btn">Submit</button>
+        </div>
+    </div>
+</div>
+
+
+        </main>
+    </div>
+    <script src="/JS/payment.js"></script>
+</body>
+</html>

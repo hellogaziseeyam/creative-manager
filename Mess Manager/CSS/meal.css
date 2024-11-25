@@ -1,0 +1,243 @@
+/* Reset default margins and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background-color: #F6F6FF;
+    color: #000;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px; /* Gap between logo and menu items */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 32px; /* Gap between menu items */
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.menu-item:hover {
+    color: #c8cbff;
+}
+
+/* Main Content */
+.parent {
+    flex: 1;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Section Container */
+.section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Space between title and content */
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+/* Filter Section Styling */
+.filter-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.filter-input {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+    background-color: #fff;
+}
+
+.submit-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+    border: none;
+    background-color: #74ffe8;
+    color: #000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #5de6cf;
+}
+
+/* Meal Table Styling */
+/* Meal Table Styling */
+.table-container {
+    margin-top: 16px;
+    padding: 16px; /* Add padding to match homepage table spacing */
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.meal-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px; /* Consistent font size */
+}
+
+.meal-table th,
+.meal-table td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Match padding for cells */
+    text-align: left; /* Align content to the left as per homepage table style */
+}
+
+.meal-table th {
+    background-color: #F6F6FF; /* Match header background color */
+    color: #000; /* Header text color */
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.meal-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternating row colors for readability */
+}
+
+.meal-table tbody tr:hover {
+    background-color: #e8f4ff; /* Light hover effect for interactivity */
+}
+
+.meal-table td {
+    color: #333; /* Match table content text color */
+    font-weight: 400;
+}
+
+table-container {
+    margin-top: 16px;
+    padding: 0 16px;
+    overflow-x: auto; /* Enable horizontal scrolling for small screens */
+}
+
+.shopping-table,
+.payment-table {
+    width: 100%;
+    max-width: 100%; /* Ensure the table doesn't overflow */
+    border-collapse: collapse; /* Merge table borders */
+    margin-bottom: 16px;
+    background-color: #fff; /* White background for better readability */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
+}
+
+.shopping-table th,
+.payment-table th,
+.shopping-table td,
+.payment-table td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Increase padding for readability */
+    text-align: center;
+    vertical-align: middle; /* Align text in the middle vertically */
+}
+
+.shopping-table th,
+.payment-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase; /* Optional: For header styling */
+}
+
+.table-input {
+    width: 90%; /* Slight padding to avoid stretching to table edges */
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.table-input:focus {
+    outline: none;
+    border-color: #74ffe8; /* Highlight on focus */
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px; /* Add some padding to the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-btn:hover svg {
+    stroke: #ff6f6f; /* Highlight the delete icon on hover */
+}
+
+/* Table Buttons */
+.table-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.add-row-btn,
+.submit-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-row-btn {
+    background-color: #74ffe8;
+    color: #000;
+}
+
+.add-row-btn:hover {
+    background-color: #5de6cf;
+}
+
+.submit-btn {
+    background-color: #c8cbff;
+    color: #000;
+}
+
+.submit-btn:hover {
+    background-color: #b0b4ff;
+}
